@@ -8,6 +8,11 @@
     background-color: var(--siteColor);
 }
 
+.btn-secondary-site{
+    background-color: var(--secondaryColor);
+}
+
+
 .fs-9{
     font-size: .9rem;
 }
@@ -15,13 +20,81 @@
 .text-site-dark{
     color:var(--siteDark);
 }
-
-.navbar-nav .nav-link.active{
+.text-site{
+   color:var(--siteColor);
+}
+.text-site-secondary{
+    color:var(--secondaryColor);
+}
+.navbar-nav .nav-link.active,nav ul li:hover .nav-link{
     color:var(--siteColor);
 }
 
 .contact-btn:hover{
     background-color: var(--secondaryColor);
+}
+
+.contact-secondary-btn:hover{
+    background-color: var(--siteColor);
+}
+
+.w-80{
+    width:80%;
+}
+
+
+#Home {
+    height:75vh;
+    padding-top:7vh;
+    background-image:url("../images/baner-dec-left.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.homeH1{
+    height:auto;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none ;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  margin: 0 2px;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots{
+    position:absolute;
+    left:10%;
+}
+
+.dot-active{
+    color:var(--siteColor);
+    border-bottom:2px solid var(--siteColor);
+}
+
+/* Fading animation */
+.fadek {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadek {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 
@@ -45,4 +118,16 @@
         padding-right: var(--bs-navbar-nav-link-padding-x);
         padding-left: var(--bs-navbar-nav-link-padding-x);
     }
+}
+
+
+@media screen and (min-width:992px){
+    #Home {
+        height:90vh;
+        padding-top:0;
+    }
+    .homeH1{
+        height:100%;
+    }
+
 }
