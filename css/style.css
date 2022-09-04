@@ -1,0 +1,48 @@
+:root{
+    --siteColor:#FF685E;
+    --siteDark:#2A2A2A;
+    --secondaryColor:#01A4ED;
+}
+
+.btn-site{
+    background-color: var(--siteColor);
+}
+
+.fs-9{
+    font-size: .9rem;
+}
+
+.text-site-dark{
+    color:var(--siteDark);
+}
+
+.navbar-nav .nav-link.active{
+    color:var(--siteColor);
+}
+
+.contact-btn:hover{
+    background-color: var(--secondaryColor);
+}
+
+
+@media screen and (min-width:768px){
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--bs-navbar-nav-link-padding-x);
+    }
+}
