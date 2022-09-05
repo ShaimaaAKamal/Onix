@@ -67,37 +67,37 @@ nav{
 
 
 /* Slideshow container */
-.slideshow-container {
+#Home .slideshow-container {
 
     position: relative;
     margin: auto;
 }
 
 /* Hide the images by default */
-.mySlides {
+#Home .mySlides {
   display: none ;
 }
 
 /* The dots/bullets/indicators */
-.dot {
+#Home .dot {
   cursor: pointer;
   margin: 0 2px;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
-.dots{
+#Home .dots{
     position:absolute;
     left:10%;
 }
 
-.dot-active{
+#Home .dot-active{
     color:var(--siteColor);
     border-bottom:2px solid var(--siteColor);
 }
 
 /* Fading animation */
-.fadek {
+#Home .fadek {
   animation-name: fade;
   animation-duration: 1.5s;
 }
@@ -112,13 +112,14 @@ nav{
     background-image: url('../images/services-left-dec.png'),url('../images/services-right-dec.png');
     background-repeat: no-repeat;
     background-position: top left , bottom right;
+   
 }
 
-#Services .carousel-indicators{
+#Services .carousel-indicators,#Portfolio .carousel-indicators{
 bottom:-80px;
 }
 
-#Services .carousel-indicators [data-bs-target]{
+#Services .carousel-indicators [data-bs-target],#Portfolio .carousel-indicators [data-bs-target]{
     background-color: var(--siteColor);
     opacity: 25%;
     width:10px;
@@ -126,9 +127,32 @@ bottom:-80px;
     border-radius:50%;
 }
 
-#Services .carousel-indicators .active{
+#Services .carousel-indicators .active,#Portfolio .carousel-indicators .active{
     opacity:1;
 }
+
+
+
+#Portfolio {
+    background-image: url("../images/portfolio-left-dec.png");
+    background-repeat: no-repeat;
+}
+
+.hoverCardImage{
+    background-image: url('../images/hover-bg.png');
+    background-size: cover;
+    height:200px;
+    width:200px;
+    border-radius:20px 0px;
+    right:20px;
+    bottom:-500px;
+    transition: all 1s;
+}
+.parent:hover .hoverCardImage{
+    bottom:20px;
+}
+
+
 @media screen and (min-width:768px){
 
     .navbar-expand-lg .navbar-toggler {
