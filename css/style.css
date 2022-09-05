@@ -42,6 +42,13 @@
     width:80%;
 }
 
+.rounded-medium{
+    border-radius:1rem;
+}
+
+.border-Card{
+    border-color:#EEEEEE;
+}
 
 #Home {
     height:75vh;
@@ -97,7 +104,28 @@
   to {opacity: 1}
 }
 
+/* end of Home SECTION */
+#Services{
+    background-image: url('../images/services-left-dec.png'),url('../images/services-right-dec.png');
+    background-repeat: no-repeat;
+    background-position: top left , bottom right;
+}
 
+#Services .carousel-indicators{
+bottom:-80px;
+}
+
+#Services .carousel-indicators [data-bs-target]{
+    background-color: var(--siteColor);
+    opacity: 25%;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+}
+
+#Services .carousel-indicators .active{
+    opacity:1;
+}
 @media screen and (min-width:768px){
 
     .navbar-expand-lg .navbar-toggler {
@@ -123,7 +151,7 @@
 
 @media screen and (min-width:992px){
     #Home {
-        height:90vh;
+        height:98vh;
         padding-top:0;
     }
     .homeH1{
