@@ -153,6 +153,32 @@ bottom:-80px;
     bottom:20px;
 }
 
+#Plans{
+    background-image: url("../images/tables-left-dec.png"),url("../images/tables-right-dec.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: top left ,bottom right;
+
+}
+.planCard1{
+    background-image: url('../images/first-plan-bg.png');
+    background-repeat: no-repeat;
+    background-position:-20px left;
+}
+
+.planCard2{
+    background-image: url('../images/second-plan-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:top 0px -13px;
+}
+
+.planCard3{
+    background-image: url("../images//third-plan-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0px;
+}
+
 
 @media screen and (min-width:768px){
 
@@ -184,6 +210,25 @@ bottom:-80px;
     }
     .homeH1{
         height:100%;
+    }
+
+    .planCard1{
+        background-position:0px -16px;
+    }
+    
+    .planCard2{
+        background-size: cover;
+        background-position:center 60%;
+    }
+    
+    .planCard3{
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #Plans{
+        background-position: top left ,center right;
+    
     }
 
 }
