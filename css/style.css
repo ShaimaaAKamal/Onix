@@ -136,6 +136,7 @@ bottom:-80px;
 #Portfolio {
     background-image: url("../images/portfolio-left-dec.png");
     background-repeat: no-repeat;
+    background-position: 30px 50px;
 }
 
 .hoverCardImage{
