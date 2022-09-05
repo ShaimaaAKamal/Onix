@@ -17,6 +17,9 @@
     font-size: .9rem;
 }
 
+nav{
+    z-index:500;
+}
 .text-site-dark{
     color:var(--siteDark);
 }
