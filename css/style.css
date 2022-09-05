@@ -161,7 +161,6 @@ bottom:-80px;
     background-image: url("../images/tables-left-dec.png"),url("../images/tables-right-dec.png");
     background-repeat: no-repeat,no-repeat;
     background-position: top left ,bottom right;
-
 }
 .planCard1{
     background-image: url('../images/first-plan-bg.png');
@@ -186,6 +185,7 @@ bottom:-80px;
 .Subscribe .container{
     background-image:url("../images/subscribe-bg.png");
     background-size:cover;
+    border-radius: 1rem;
 }
 
 .subImage{
