@@ -142,26 +142,40 @@ bottom:-80px;
     background-repeat: no-repeat;
     background-position: 30px 50px;
 }
-
-.hoverCardImage{
+.videoCard,.hoverCardImage{
     background-image: url('../images/hover-bg.png');
     background-size: cover;
+    border-radius:20px 0px;
+}
+.hoverCardImage{
     height:200px;
     width:200px;
-    border-radius:20px 0px;
     right:20px;
     bottom:-500px;
     transition: all 1s;
+}
+.videoCard{
+    width: 200px;
+    height:100px;
+    top:0;
+    left:0;
 }
 .parent:hover .hoverCardImage{
     bottom:20px;
 }
 
+/* #Plans{
+    background-image: url("../images/tables-left-dec.png"),url("../images/tables-right-dec.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: left top ,bottom right;
+} */
+
 #Plans{
     background-image: url("../images/tables-left-dec.png"),url("../images/tables-right-dec.png");
     background-repeat: no-repeat,no-repeat;
-    background-position: top left ,bottom right;
+    background-position: left top ,right center;
 }
+
 .planCard1{
     background-image: url('../images/first-plan-bg.png');
     background-repeat: no-repeat;
@@ -253,9 +267,12 @@ bottom:-80px;
         background-position: center center;
     }
 
+    /* #Plans{
+        background-position: left top ,right center;
+    } */
+
     #Plans{
-        background-position: top left ,center right;
-    
+        background-position: left top ,right top;
     }
 
     .bg-parent{
