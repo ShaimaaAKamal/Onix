@@ -39,3 +39,26 @@ function currentSlide(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " dot-active";
   }
+
+  let videos=document.getElementsByClassName('video');
+  let videoToggles=document.getElementsByClassName('videoToggle');
+  let videoFrames=document.getElementsByClassName('videoFrame');
+  for(let i=0 ;i<videos.length;i++){
+    videos[i].addEventListener("click",(e)=>{
+      for(let j=0 ; j< videoToggles.length ; j++){
+        if(j==i){
+          videoToggles[i].children[0].classList.remove('d-none');
+          videoToggles[i].children[1].classList.add('d-none'); 
+          videoFrames[i].classList.remove('d-none');
+        }
+        else{
+          videoToggles[j].children[0].classList.add('d-none');
+          videoToggles[j].children[1].classList.remove('d-none');
+          videoFrames[j].classList.add('d-none');
+
+        }
+      }
+
+             
+    })
+  }

@@ -145,21 +145,17 @@ bottom:-80px;
 .videoCard,.hoverCardImage{
     background-image: url('../images/hover-bg.png');
     background-size: cover;
-    border-radius:20px 0px;
 }
 .hoverCardImage{
+    border-radius:20px 0px;
+
     height:200px;
     width:200px;
     right:20px;
     bottom:-500px;
     transition: all 1s;
 }
-.videoCard{
-    width: 200px;
-    height:100px;
-    top:0;
-    left:0;
-}
+
 .parent:hover .hoverCardImage{
     bottom:20px;
 }
@@ -220,6 +216,41 @@ bottom:-80px;
 .btn-sub{
     background-color: var(--siteColor);
 }
+
+#Videos{
+    background-image: url("../images/videos-left-dec.png"),url("../images/videos-right-dec.png");
+    background-repeat: no-repeat;
+    background-position: left top ,right top;
+}
+.activeVideo{
+    background-image: linear-gradient(#FF6F60,#FE8A66);
+    padding:3rem 2rem;
+    border-radius:1rem;
+    color:#fff;
+    text-align: center;
+}
+
+.VideoItem{
+    border-radius:1rem 0;
+    background-image: linear-gradient(#FF6F60,#FE8A66);
+    color:#fff;
+    text-align: center;
+    padding:1rem;
+}
+
+.videoThumb{
+    height:50vh;
+}
+
+.videoCard{
+    border-radius: 1rem 0px;
+    width: 250px;
+    height:150px;
+    top:-2px;
+    left:-2px;
+}
+
+
 
 @media screen and (min-width:768px){
 
@@ -291,5 +322,10 @@ bottom:-80px;
     .btn-sub{
         background-color: var(--secondaryColor);
     }
+
+    .videoThumb{
+        height:100%;
+    }
+    
 
 }
