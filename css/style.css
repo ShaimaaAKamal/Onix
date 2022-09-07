@@ -271,6 +271,48 @@ bottom:-80px;
     border-bottom: .5px solid #9BDBF8;
 }
 
+footer{
+    background-image: url("../images/footer-dec.png");
+    background-repeat: no-repeat;
+}
+ 
+footer a{
+    text-decoration: none;
+}
+
+footer p , footer p a {
+    color:#AFAFAF;
+    font-size:1rem;
+    font-weight: light;
+} 
+
+footer input::placeholder{
+    color:#fff;
+    font-weight: light;
+}
+
+footer .subIcon i {
+    font-size:.8rem;
+    right:20px;
+    top:40%;
+}
+
+.socials a i{
+    background-color: var(--secondaryColor);
+    padding:.5rem;
+    font-size:.9rem;
+    margin-right:.5rem;
+    border-radius: 50%;
+    color:#fff;
+}
+
+.footerBorder{
+    border-bottom: 1px solid #EEE;
+}
+
+.FooterCommunity p:hover a ,.FooterServices p:hover a{
+   color:var(--siteColor);
+} 
 
 @media screen and (min-width:768px){
 
