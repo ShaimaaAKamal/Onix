@@ -40,6 +40,8 @@ function currentSlide(n) {
     dots[slideIndex-1].className += " dot-active";
   }
 
+
+
   let videos=document.getElementsByClassName('video');
   let videoToggles=document.getElementsByClassName('videoToggle');
   let videoFrames=document.getElementsByClassName('videoFrame');
@@ -57,8 +59,20 @@ function currentSlide(n) {
           videoFrames[j].classList.add('d-none');
 
         }
-      }
+      }})
+  }
 
-             
+
+  let Navachors=document.getElementsByClassName('nav-link');
+  for(let i=0 ; i < Navachors.length ; i++){
+    Navachors[i].addEventListener('click',(e)=>{
+      for(let j=0 ; j <Navachors.length ; j++){
+        if(j == i)
+        Navachors[i].classList.add('active');
+        else
+        Navachors[j].classList.remove('active');
+      }
+    
+
     })
   }
