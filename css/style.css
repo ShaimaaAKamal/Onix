@@ -21,6 +21,8 @@
     width:88%;
 }
 
+
+
 nav{
     z-index:500;
 }
@@ -251,6 +253,23 @@ bottom:-80px;
 }
 
 
+#Contact{
+    background-image: url('../images/contact-left-dec.png'),url('../images/contact-dec.png');
+    background-repeat: no-repeat;
+    background-position: left top,right 800px;
+}
+
+.contactForm{
+    background-image: url("../images/contact-form-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactForm .borderForm{
+    border:none;
+    border-bottom: .5px solid #9BDBF8;
+}
+
 
 @media screen and (min-width:768px){
 
@@ -325,6 +344,14 @@ bottom:-80px;
 
     .videoThumb{
         height:100%;
+    }
+
+    .FormInfo{
+        transform: translate(-100px,-12%);
+    }
+    
+    #Contact{
+        background-position: left top,right 500px;
     }
     
 
