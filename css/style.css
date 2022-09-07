@@ -153,7 +153,6 @@ bottom:-80px;
 }
 .hoverCardImage{
     border-radius:20px 0px;
-
     height:200px;
     width:200px;
     right:20px;
@@ -249,8 +248,9 @@ bottom:-80px;
 
 .videoCard{
     border-radius: 1rem 0px;
-    width: 250px;
-    height:150px;
+    width: 180px;
+    height:80px;
+    font-size:.7rem;
     top:-2px;
     left:-2px;
 }
@@ -337,6 +337,12 @@ footer .subIcon i {
         padding-right: var(--bs-navbar-nav-link-padding-x);
         padding-left: var(--bs-navbar-nav-link-padding-x);
     }
+
+
+    .videoCard{
+        width: 220px;
+        height:120px;
+    }
 }
 
 
@@ -390,6 +396,11 @@ footer .subIcon i {
 
     .videoThumb{
         height:100%;
+    }
+
+    .videoCard{
+        width: 250px;
+        height:150px;
     }
 
     .FormInfo{
