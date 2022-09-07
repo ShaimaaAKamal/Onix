@@ -21,6 +21,10 @@
     width:88%;
 }
 
+.f-p{
+    font-size: .8rem;
+}
+
 /* .mb-6{
     margin-bottom:4rem;
 } */
@@ -196,7 +200,7 @@ bottom:-80px;
     background-position: center 0px;
 }
 
-.Subscribe .container{
+.Subscribe .container-md{
     background-image:url("../images/subscribe-bg.png");
     background-size:cover;
     border-radius: 1rem;
@@ -318,6 +322,9 @@ footer .subIcon i {
 } 
 
 @media screen and (min-width:768px){
+    .f-p{
+        font-size: .9rem;
+    }
 
     .navbar-expand-lg .navbar-toggler {
         display: none;
@@ -343,6 +350,7 @@ footer .subIcon i {
         width: 220px;
         height:120px;
     }
+
 }
 
 
